@@ -23,6 +23,9 @@
 		EE8752541716A666004A4995 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE87522F1716A665004A4995 /* Foundation.framework */; };
 		EE87525C1716A666004A4995 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE87525A1716A666004A4995 /* InfoPlist.strings */; };
 		EE87525F1716A666004A4995 /* NoGCDTwitterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE87525E1716A666004A4995 /* NoGCDTwitterTests.m */; };
+		EE87526A1716A786004A4995 /* TwitterWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8752691716A786004A4995 /* TwitterWrapper.m */; };
+		EE87526C1716A810004A4995 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE87526B1716A810004A4995 /* Social.framework */; };
+		EE87526E1716A81B004A4995 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE87526D1716A81A004A4995 /* Accounts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,10 @@
 		EE87525B1716A666004A4995 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EE87525D1716A666004A4995 /* NoGCDTwitterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoGCDTwitterTests.h; sourceTree = "<group>"; };
 		EE87525E1716A666004A4995 /* NoGCDTwitterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoGCDTwitterTests.m; sourceTree = "<group>"; };
+		EE8752681716A786004A4995 /* TwitterWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterWrapper.h; sourceTree = "<group>"; };
+		EE8752691716A786004A4995 /* TwitterWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterWrapper.m; sourceTree = "<group>"; };
+		EE87526B1716A810004A4995 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		EE87526D1716A81A004A4995 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE87526E1716A81B004A4995 /* Accounts.framework in Frameworks */,
+				EE87526C1716A810004A4995 /* Social.framework in Frameworks */,
 				EE87522E1716A665004A4995 /* UIKit.framework in Frameworks */,
 				EE8752301716A665004A4995 /* Foundation.framework in Frameworks */,
 				EE8752321716A665004A4995 /* CoreGraphics.framework in Frameworks */,
@@ -106,6 +115,8 @@
 		EE87522C1716A665004A4995 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EE87526D1716A81A004A4995 /* Accounts.framework */,
+				EE87526B1716A810004A4995 /* Social.framework */,
 				EE87522D1716A665004A4995 /* UIKit.framework */,
 				EE87522F1716A665004A4995 /* Foundation.framework */,
 				EE8752311716A665004A4995 /* CoreGraphics.framework */,
@@ -123,6 +134,8 @@
 				EE8752481716A666004A4995 /* ViewController.h */,
 				EE8752491716A666004A4995 /* ViewController.m */,
 				EE8752341716A665004A4995 /* Supporting Files */,
+				EE8752681716A786004A4995 /* TwitterWrapper.h */,
+				EE8752691716A786004A4995 /* TwitterWrapper.m */,
 			);
 			path = NoGCDTwitter;
 			sourceTree = "<group>";
@@ -273,6 +286,7 @@
 				EE87523A1716A665004A4995 /* main.m in Sources */,
 				EE87523E1716A666004A4995 /* AppDelegate.m in Sources */,
 				EE87524A1716A666004A4995 /* ViewController.m in Sources */,
+				EE87526A1716A786004A4995 /* TwitterWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
